@@ -16,6 +16,16 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Cypress
+
+### Setup
+
+```yarn add cypress --dev``` will install the cypress package.
+```node_modules/.bin/cypress open``` will create the _cypress_ folder and the _cypress.json_ file.
+You can add ``"test:ui": "cypress open"`` in _scripts_ section of _package.json_.
+
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
