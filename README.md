@@ -23,7 +23,12 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 ```yarn add cypress --dev``` will install the cypress package.
 ```node_modules/.bin/cypress open``` will create the _cypress_ folder and the _cypress.json_ file.
 You can add ``"test:ui": "cypress open"`` in _scripts_ section of _package.json_.
-
+To make it works within TypeScript you need to add the folllowing to the _tsconfig.json_ file:  
+```json
+  "compilerOptions": {
+    "types": ["cypress"]
+  },
+```
 
 
 ## Learn More
