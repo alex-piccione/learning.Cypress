@@ -30,6 +30,10 @@ To make it works within TypeScript you need to add the folllowing to the _tsconf
   },
 ```
 
+### Learning 
+- Setup Cypress and use TypeScript
+- Navigate Cypress history and info
+- use the .get with complex querySelector
 
 ## Learn More
 
