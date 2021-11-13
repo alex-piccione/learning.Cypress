@@ -18,6 +18,8 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Cypress
 
+[![.github/workflows/cypress.yml](https://github.com/alex-piccione/learning.Cypress/actions/workflows/cypress.yml/badge.svg)](https://github.com/alex-piccione/learning.Cypress/actions/workflows/cypress.yml)
+
 ### Setup
 
 ```yarn add cypress --dev``` will install the cypress package.  
