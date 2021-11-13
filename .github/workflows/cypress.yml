@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     #- uses: actions/vercel-cypress@v1
+    - uses: actions/checkout@v2
     - uses: cypress-io/github-action@v2
       with:
-        vercel-token: ${{ secrets.VERCEL_TOKEN }}
-        repo: learning.Cypress
+        #vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        browser: chrome
