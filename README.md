@@ -20,9 +20,13 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ### Setup
 
-```yarn add cypress --dev``` will install the cypress package.
-```node_modules/.bin/cypress open``` will create the _cypress_ folder and the _cypress.json_ file.
-You can add ``"test:ui": "cypress open"`` in _scripts_ section of _package.json_.
+```yarn add cypress --dev``` will install the cypress package.  
+```node_modules/.bin/cypress open``` will create the _cypress_ folder and the _cypress.json_ file.  
+You can add these comamnds to the _scripts_ section of _package.json_:
+```json
+  "test:ui:open": "cypress open",
+  "test:ui:run": "cypress run"
+```
 To make it works within TypeScript you need to add the folllowing to the _tsconfig.json_ file:  
 ```json
   "compilerOptions": {
@@ -30,12 +34,16 @@ To make it works within TypeScript you need to add the folllowing to the _tsconf
   },
 ```
 
-### Learning 
-- Setup Cypress and use TypeScript
-- Navigate Cypress history and info
-- use the .get with complex querySelector
+### Learned
++ Setup Cypress and use TypeScript
++ Navigate Cypress history and info
++ use the .get with complex querySelector
++ use loop and multiple _it()_ in it (cypress run everything in async)
 
-## Learn More
+#### To learn
+- use Gherkin language
+
+## Next.js
 
 To learn more about Next.js, take a look at the following resources:
 
