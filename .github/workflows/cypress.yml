@@ -1,9 +1,16 @@
-- name: Cypress tests
-  # You may pin to the exact commit or the version.
-  # uses: mikefrancis/vercel-cypress@b5f5997a03284c62afab2dac72303009c21bb5fc
-  uses: mikefrancis/vercel-cypress@v1
-  with:
-    # Vercel API token
-    vercel-token: JJhuv5j2rXAXwxbbMRJr9a7C
-    # Repository name
-    repo: learning.Cypress
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  cypress:
+    name: Cypress tests
+      # You may pin to the exact commit or the version.
+      # uses: mikefrancis/vercel-cypress@b5f5997a03284c62afab2dac72303009c21bb5fc
+    uses: mikefrancis/vercel-cypress@v1
+    with:
+      # Vercel API token
+      vercel-token: JJhuv5j2rXAXwxbbMRJr9a7C
+      # Repository name
+      repo: learning.Cypress
