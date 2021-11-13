@@ -1,9 +1,21 @@
-- name: Cypress tests
-  # You may pin to the exact commit or the version.
-  # uses: mikefrancis/vercel-cypress@b5f5997a03284c62afab2dac72303009c21bb5fc
-  uses: mikefrancis/vercel-cypress@v1
-  with:
-    # Vercel API token
-    vercel-token: JJhuv5j2rXAXwxbbMRJr9a7C
-    # Repository name
-    repo: learning.Cypress
+name: Cyress Tests
+on: deployment  
+#  pull_request:
+#    branches:
+#    - main
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest
+    steps:
+    #- uses: actions/vercel-cypress@v1
+    - name: Checkout
+      uses: actions/checkout@v2    
+    - name: Cypress run
+      uses: cypress-io/github-action@v2
+      with:
+        #vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        #build: yarn dev
+        #browser: chrome
+        start: yarn dev
+        #command: cypress run
