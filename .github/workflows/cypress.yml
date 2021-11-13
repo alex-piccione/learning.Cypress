@@ -15,6 +15,6 @@ jobs:
         #vercel-token: ${{ secrets.VERCEL_TOKEN }}
         #build: yarn dev
         #browser: chrome
-        command: >
+        command: |
           yarn dev  
           cypress run --headless
