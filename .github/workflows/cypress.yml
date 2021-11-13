@@ -1,3 +1,4 @@
+name: Cyress Tests
 on:
   pull_request:
     branches:
