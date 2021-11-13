@@ -13,4 +13,5 @@ jobs:
     - uses: cypress-io/github-action@v2
       with:
         #vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        build: yarn dev
         browser: chrome
