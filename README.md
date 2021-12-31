@@ -41,6 +41,7 @@ To make it works within TypeScript you need to add the folllowing to the _tsconf
 + Navigate Cypress history and info
 + use the .get with complex querySelector
 + use loop and multiple _it()_ in it (cypress run everything in async)
++ add test of component
 
 #### To learn
 - use Gherkin language
