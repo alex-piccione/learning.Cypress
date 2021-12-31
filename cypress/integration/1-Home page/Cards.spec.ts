@@ -25,8 +25,7 @@ export default describe("Home page", () => {
 
       it(`has link to "${url}"`, ()=> {
         x.parent()
-          .should("have.attr", "href")
-          .and("eq", url)
+          .should("have.attr", "href", url)
       }) 
     })
   }
