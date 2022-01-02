@@ -19,7 +19,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "types": ["cypress"]
+    "types": [
+      "cypress"
+    ],
+    "incremental": true // https://www.typescriptlang.org/tsconfig#incremental
   },
   "include": [
     "**/*.ts*"
