@@ -1,4 +1,4 @@
-// this is not working
+// This is not working.
 // 1. it is usinf the support/step_definitions folder
 // 2. it is using the .js fille but .ts file is not working
 
