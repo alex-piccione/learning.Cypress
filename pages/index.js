@@ -51,6 +51,11 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+
+          <a href="/products" className={styles.card}>
+            <h2>Products &rarr;</h2>
+            <p>List registered Products and allow to manage them.</p>
+          </a>
         </div>
       </main>
 
