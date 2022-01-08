@@ -1,11 +1,11 @@
 import {Before, Given, When, Then} from 'cypress-cucumber-preprocessor/steps'
 
 Before(() => {
-    cy.visit("/products")
+//    cy.visit("/products")
 })
 
 Given("I visit {string} page", (url) => {
-    //cy.visit(url)
+    cy.visit(url)
 })
 
 Then("I see {string} in the header", (header) => {
