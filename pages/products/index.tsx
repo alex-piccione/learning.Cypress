@@ -6,9 +6,9 @@ export default function Page() {
     const [products, setProducts] = useState<Product[]>([])
     useEffect(() => {
         const products = [
-            { brand:"Dell", name:"Dell XPS 13" },
-            { brand:"Dell", name:"Dell XPS 15" },
-            { brand:"Levi's", name:"Jeans 501" },
+            { id:"001", brand:"Dell", name:"Dell XPS 13" },
+            { id:"002", brand:"Dell", name:"Dell XPS 15" },
+            { id:"003", brand:"Levi's", name:"Jeans 501" },
         ]
         setProducts(products)
     }, [])
@@ -23,7 +23,7 @@ export default function Page() {
             </tr>
         </thead>
         <tbody>
-        {products && products.map(product => <tr>
+        {products && products.map(product => <tr key={product.id}>
             <td>{product.brand}</td>
             <td>{product.name}</td>
         </tr>)}
