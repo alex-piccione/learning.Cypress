@@ -46,8 +46,9 @@ See the scripts in _package.json_ to run Cypress with or withiut UI.
 + use the .get with complex querySelector
 + use loop and multiple _it()_ in it (cypress run everything in async)
 + add test of component
-+ use Gherkin language to write features
++ use Gherkin language to write features (cucumber)
 + use aliases to reuse elements
++ use the @focus tag (cucumber plugin)
 
 #### To learn
 - use cy.intercept() to capture requests and mock api calls
