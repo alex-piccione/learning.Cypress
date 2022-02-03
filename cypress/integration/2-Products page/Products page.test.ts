@@ -1,5 +1,3 @@
-import { arrayBuffer } from "stream/consumers"
-
 export default describe("Products page", () => {
 
     beforeEach(() => {

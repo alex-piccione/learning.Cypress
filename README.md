@@ -44,7 +44,7 @@ See the scripts in _package.json_ to run Cypress with or withiut UI.
 + Setup Cypress and use TypeScript
 + Navigate Cypress history and info
 + use the .get with complex querySelector
-+ use loop and multiple _it()_ in it (cypress run everything in async)
++ use loop and multiple _it()_ (cypress run everything in async)
 + add test of component
 + use Gherkin language to write features (cucumber)
 + use aliases to reuse elements
@@ -52,6 +52,7 @@ See the scripts in _package.json_ to run Cypress with or withiut UI.
 
 #### To learn
 - use cy.intercept() to capture requests and mock api calls
+- test component in isolation using mount()
 
 
 ## Next.js
